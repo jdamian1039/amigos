@@ -20,6 +20,7 @@ public class ControladorUusario {
         //              valor peticion cliente   probablemente algo dentro del objeto puede producir un error dificil de intuir
         //Leer y convertir el el objeto json a objeto java
         ObjectMapper mapper=new ObjectMapper();
+        System.out.println("probando backend");
         Usuario u=mapper.readValue(json, Usuario.class);
         //El usuario en formato json lo guardamos en mongodb
         repUsuario.save(u);

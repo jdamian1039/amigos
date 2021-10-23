@@ -1,7 +1,9 @@
 package com.unitec.amigos;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Usuario {
     private String nombre;
 
